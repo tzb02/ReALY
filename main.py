@@ -56,5 +56,4 @@ if submit_button:
     for key, value in neighborhood_info.items():
         st.write(f"{key}: {value}")
 
-    # Add your map implementation here
-    st.write("Map: (Replace with your map implementation)")
+
