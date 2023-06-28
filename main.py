@@ -1,32 +1,61 @@
 import streamlit as st
-
+if address=='6307 Prestonshire Ln, Dallas, TX 75225':
 # Function to get property and rental evaluation (replace with your own implementation)
-def get_property_rental_evaluation(address):
-    property_evaluation = {
-        'Estimated property value': '$2,701,800',
-        'Price per square foot': '$502',
-        'Comparable properties': 5,
-        'Historical price trends': 'Upward'
+    def get_property_rental_evaluation(address):
+        property_evaluation = {
+            'Estimated property value': '$2,705,800',
+            'Price per square foot': '$502.75',
+            'Comparable properties': 5,
+            'Historical price trends': 'Upward'
     }
-    rental_evaluation = {
-        'Estimated monthly rent': '$15,625',
-        'Rent per square foot': '$2.90',
-        'Comparable rental properties': 4,
-        'Historical rental trends': 'Upward'
+        rental_evaluation = {
+            'Estimated monthly rent': '$15,625',
+            'Rent per square foot': '$2.90',
+            'Comparable rental properties': 4,
+            'Historical rental trends': 'Upward'
     }
-    return property_evaluation, rental_evaluation
+        return property_evaluation, rental_evaluation
+
 
 # Function to get neighborhood information (replace with your own implementation)
-def get_neighborhood_information(address):
-    neighborhood_info = {
-        'Average home price': '$2,420,000',
-        'Average rent price': '$2,380',
-        'Crime rate': 'Low',
-        'School ratings': 'Above average',
-        'Walkability score': 13,
+    def get_neighborhood_information(address):
+        neighborhood_info = {
+            'Average home price': '$2,420,000',
+            'Average rent price': '$2,380',
+            'Crime rate': 'Low',
+            'School ratings': 'Above average',
+            'Walkability score': 13,
         
     }
-    return neighborhood_info
+        return neighborhood_info
+    elif address=='6314 Palo Pinto Ave, Dallas, TX 75214':
+# Function to get property and rental evaluation (replace with your own implementation)
+        def get_property_rental_evaluation(address):
+            property_evaluation = {
+                'Estimated property value': '$1,412,200',
+                'Price per square foot': '$357.97',
+                'Comparable properties': 5,
+                'Historical price trends': 'Upward'
+    }
+            rental_evaluation = {
+                'Estimated monthly rent': '$8,763',
+                'Rent per square foot': '$2.22',
+                'Comparable rental properties': 4,
+                'Historical rental trends': 'Upward'
+    }
+            return property_evaluation, rental_evaluation
+
+# Function to get neighborhood information (replace with your own implementation)
+        def get_neighborhood_information(address):
+            neighborhood_info = {
+                'Average home price': '$980,000',
+                'Average rent price': '$3,188',
+                'Crime rate': 'Low',
+                'School ratings': 'Average',
+                'Walkability score': 51,
+        
+    }
+            return neighborhood_info
 
 # App layout
 st.title("PropValAI")
