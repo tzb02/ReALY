@@ -98,7 +98,7 @@ elif address=='7726 Hillard Dr, Dallas, TX 75217':
 
 
 if submit_button:
-    time.sleep(12)
+
     property_evaluation, rental_evaluation = get_property_rental_evaluation(address)
     neighborhood_info = get_neighborhood_information(address)
 
