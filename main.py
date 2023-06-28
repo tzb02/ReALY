@@ -1,3 +1,4 @@
+import time
 import streamlit as st
 st.title("PropValAI")
 st.write("Enter an address to get property and rental evaluations, along with neighborhood information.")
@@ -61,11 +62,40 @@ elif address=='6314 Palo Pinto Ave, Dallas, TX 75214':
         
     }
             return neighborhood_info
+elif address=='6314 Palo Pinto Ave, Dallas, TX 75214':
+# Function to get property and rental evaluation (replace with your own implementation)
+        def get_property_rental_evaluation(address):
+            property_evaluation = {
+                'Estimated property value': '$181,400',
+                'Price per square foot': '$175.27',
+                'Comparable properties': 5,
+                'Historical price trends': 'Upward'
+    }
+            rental_evaluation = {
+                'Estimated monthly rent': '$1,625',
+                'Rent per square foot': '$1.57',
+                'Comparable rental properties': 4,
+                'Historical rental trends': 'Upward'
+    }
+            return property_evaluation, rental_evaluation
+
+# Function to get neighborhood information (replace with your own implementation)
+        def get_neighborhood_information(address):
+            neighborhood_info = {
+                'Average home price': '$226,000',
+                'Average rent price': '$1,994',
+                'Crime rate': 'Average',
+                'School ratings': 'Below Average',
+                'Walkability score': 74,
+        
+    }
+            return neighborhood_info
 
 # App layout
 
 
 if submit_button:
+    time.sleep(12)
     property_evaluation, rental_evaluation = get_property_rental_evaluation(address)
     neighborhood_info = get_neighborhood_information(address)
 
