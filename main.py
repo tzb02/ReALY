@@ -6,6 +6,7 @@ st.write("Enter an address to get property and rental evaluations, along with ne
 address = st.text_input("Address")
 submit_button = st.button("Submit")
 if address=='6307 Prestonshire Ln, Dallas, TX 75225':
+    time.sleep(12)
 # Function to get property and rental evaluation (replace with your own implementation)
     def get_property_rental_evaluation(address):
         property_evaluation = {
@@ -35,6 +36,7 @@ if address=='6307 Prestonshire Ln, Dallas, TX 75225':
     }
         return neighborhood_info
 elif address=='6314 Palo Pinto Ave, Dallas, TX 75214':
+    time.sleep(12)
 # Function to get property and rental evaluation (replace with your own implementation)
         def get_property_rental_evaluation(address):
             property_evaluation = {
@@ -62,7 +64,8 @@ elif address=='6314 Palo Pinto Ave, Dallas, TX 75214':
         
     }
             return neighborhood_info
-elif address=='6314 Palo Pinto Ave, Dallas, TX 75214':
+elif address=='7726 Hillard Dr, Dallas, TX 75217':
+        time.sleep(12)
 # Function to get property and rental evaluation (replace with your own implementation)
         def get_property_rental_evaluation(address):
             property_evaluation = {
