@@ -1,4 +1,9 @@
 import streamlit as st
+st.title("PropValAI")
+st.write("Enter an address to get property and rental evaluations, along with neighborhood information.")
+
+address = st.text_input("Address")
+submit_button = st.button("Submit")
 if address=='6307 Prestonshire Ln, Dallas, TX 75225':
 # Function to get property and rental evaluation (replace with your own implementation)
     def get_property_rental_evaluation(address):
@@ -58,11 +63,7 @@ elif address=='6314 Palo Pinto Ave, Dallas, TX 75214':
             return neighborhood_info
 
 # App layout
-st.title("PropValAI")
-st.write("Enter an address to get property and rental evaluations, along with neighborhood information.")
 
-address = st.text_input("Address")
-submit_button = st.button("Submit")
 
 if submit_button:
     property_evaluation, rental_evaluation = get_property_rental_evaluation(address)
